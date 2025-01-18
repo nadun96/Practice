@@ -1,0 +1,23 @@
+/* Type selector */
+p { color: blue; }
+
+/* Class selector */
+.card { background: white; }
+
+/* ID selector */
+#profile { width: 300px; }
+
+/* Attribute selector */
+input[type="text"] { border: 1px solid gray; }
+
+/* Descendant selector */
+.card img { width: 100%; }
+
+/* Child selector */
+.card > h2 { margin-top: 0; }
+
+/* Adjacent sibling */
+h2 + p { margin-top: 8px; }
+
+/* Pseudo-classes */
+.button:hover { background: #eee; }

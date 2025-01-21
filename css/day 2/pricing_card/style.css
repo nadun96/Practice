@@ -1,0 +1,99 @@
+/* Reset default box-sizing to border-box for better size calculations */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Center the card and add background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+/* Main card container */
+.pricing-card {
+  /* Set fixed width and add shadow for depth */
+  width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Ensures content doesn't spill out */
+}
+
+/* Card header section */
+.card-header {
+  /* Add padding for inner spacing */
+  padding: 24px;
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+}
+
+.plan-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.price-period {
+  font-size: 16px;
+}
+
+/* Features section */
+.features {
+  /* Add padding and space between items */
+  padding: 24px;
+}
+
+.feature-item {
+  /* Use flexbox for icon alignment */
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+.feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.check-icon {
+  /* Style the checkmark */
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  color: #10b981;
+}
+
+/* Button container */
+.card-footer {
+  padding: 0 24px 24px 24px;
+}
+
+.cta-button {
+  /* Style the button */
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #1d4ed8;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Model</title>
+    </head>
+
+    <body>
+        <style>
+            .box1 {
+                box-sizing: content-box;
+                width: 200px;
+                height: 200px;
+                padding: 20px;
+                background-color: red;
+                border: 5px solid black;
+                margin: 10px;
+                text-align: center;
+            }
+
+            .box1::before {
+                content: "Content Box";
+            }
+
+            .box2 {
+                box-sizing: border-box;
+                width: 200px;
+                height: 200px;
+                padding: 20px;
+                background-color: red;
+                outline: 5px solid black;
+                margin: 10px;
+                border: 20px solid black;
+                outline: 10px solid green;
+            }
+        </style>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div style="float: left; width: 50%; background-color: lightblue;">Left</div>
+        <div style="float: right; width: 50%; background-color: lightgreen;">Right</div>
+        <div style="clear: both;">Cleared Below</div>
+
+    </body>
+
+</html>
